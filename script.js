@@ -22,6 +22,7 @@ convertButton.addEventListener('click', () => {
     if (!numberInput.value) {
         outputDisplay.style.display = 'block';
         outputDisplay.textContent = 'Please enter a valid number';
+        return;
     } else if (numberInput.value.includes(-1)) {
         outputDisplay.style.display = 'block';
         outputDisplay.textContent = 'Please enter a number greater than or equal to 1';
